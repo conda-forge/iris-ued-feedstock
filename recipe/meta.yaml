@@ -1,6 +1,6 @@
-{% set version = "5.0.2" %}
+{% set version = "5.0.4" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "b35e7c07f36fb36335db67832b6e36b32e048abb744a6a33e8b11cda15a19dfa" %}
+{% set hash_value = "f3c47f31159cb3d345bfab4fec88922aa5d8b6d1e1c9676e57b8e677dc0af095" %}
 
 package:
   name: 'iris-ued'
@@ -12,7 +12,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  skip: True  # [ py<36 or not win ]
+  skip: True  # [ py<36 or linux ]
   number: 0
   entry_points:
     - iris = iris.gui:run
@@ -28,8 +28,7 @@ requirements:
     - scipy >=0.17
     - h5py >=2.6.0
     - pyqt >=5
-    - scikit-image >=0.13
-    - scikit-ued >=0.5.9
+    - scikit-ued >=1.0.1.0
     - pyqtgraph >=0.10
     - npstreams >=1.5.2
 
@@ -47,7 +46,7 @@ about:
   description: |
     Iris is both a library for interacting with ultrafast electron diffraction data, 
     as well as a GUI frontend for interactively exploring this data.
-  doc_url: 'https://iris-ued.readthedocs.io/en{{ version }}/'
+  doc_url: 'https://iris-ued.readthedocs.io/'
   dev_url: 'https://github.com/LaurentRDC/iris-ued'
 
 extra:

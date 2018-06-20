@@ -46,7 +46,7 @@ about:
   description: |
     Iris is both a library for interacting with ultrafast electron diffraction data, 
     as well as a GUI frontend for interactively exploring this data.
-  doc_url: 'https://iris-ued.readthedocs.io/en{{ version }}/'
+  doc_url: 'https://iris-ued.readthedocs.io/'
   dev_url: 'https://github.com/LaurentRDC/iris-ued'
 
 extra:

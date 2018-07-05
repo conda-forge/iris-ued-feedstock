@@ -16,9 +16,9 @@ as well as a GUI frontend for interactively exploring this data.
 Current build status
 ====================
 
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/iris-ued-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/iris-ued-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/iris-ued-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/iris-ued-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/iris-ued-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/iris-ued-feedstock/branch/master)
-![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
 
 Current release info
 ====================

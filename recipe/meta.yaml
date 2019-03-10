@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [ py<36 or linux ]
-  number: 0
+  number: 1000
   entry_points:
     - iris = iris.gui:run
   script: python -m pip install --no-deps --ignore-installed .

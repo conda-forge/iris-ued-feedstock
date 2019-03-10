@@ -117,4 +117,3 @@ Feedstock Maintainers
 =====================
 
 * [@LaurentRDC](https://github.com/LaurentRDC/)
-

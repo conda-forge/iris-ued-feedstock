@@ -1,6 +1,6 @@
-{% set version = "5.1.0" %}
+{% set version = "5.1.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a97221f48476ffaf1ca57a166e5b80f369c4905a0320656def7523d12d273fa8" %}
+{% set hash_value = "9a0227e103d81f3fb8c37671c5a5d66bf874c6ee8a3b86b065d539a3abc9c96b" %}
 
 package:
   name: 'iris-ued'
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [ py<36 or linux ]
-  number: 1000
+  number: 0
   entry_points:
     - iris = iris.gui:run
   script: python -m pip install --no-deps --ignore-installed .

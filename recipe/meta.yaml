@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [ py<36 or linux ]
-  number: 0
+  number: 1
   entry_points:
     - iris = iris.gui:run
   script: python -m pip install --no-deps --ignore-installed .
@@ -28,7 +28,7 @@ requirements:
     - scipy >=0.17
     - h5py >=2.6.0
     - pyqt >=5
-    - scikit-ued >=1.0.1.1
+    - scikit-ued == 1.0.1.1
     - pyqtgraph >=0.10
     - npstreams >=1.5.2
 

@@ -42,7 +42,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: 'LICENSE.txt'
-  summary: Ultrafast electron diffraction data exploration
+  summary: Ultrafast electron scattering data exploration
   description: |
     Iris is both a library for interacting with ultrafast electron diffraction data, 
     as well as a GUI frontend for interactively exploring this data.

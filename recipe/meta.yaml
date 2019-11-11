@@ -16,7 +16,7 @@ build:
   number: 2
   entry_points:
     - iris = iris.gui:run
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:

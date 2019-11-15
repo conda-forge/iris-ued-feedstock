@@ -1,6 +1,6 @@
 {% set version = "5.2.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "69a6f0fa224029d4d4f90d30b69f293dce68fd33db5eb0d538b29a052caec5de" %}
+{% set hash_value = "52e43299d51347c6aed9703bae37a10e4783fd375468080f060365b16e7325f8" %}
 
 package:
   name: 'iris-ued'

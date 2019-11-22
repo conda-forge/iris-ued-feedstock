@@ -1,22 +1,19 @@
 {% set version = "5.2.0" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "52e43299d51347c6aed9703bae37a10e4783fd375468080f060365b16e7325f8" %}
 
 package:
-  name: 'iris-ued'
-  version: '{{ version }}'
+  name: iris-ued
+  version: {{ version }}
 
 source:
-  fn: 'iris-ued-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/i/iris-ued/iris-ued-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 52e43299d51347c6aed9703bae37a10e4783fd375468080f060365b16e7325f8
 
 build:
-  skip: True  # [ py<36 or osx ]
   number: 0
+  skip: True  # [py<36 or linux]
   entry_points:
     - iris = iris.gui:run
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -24,13 +21,13 @@ requirements:
     - pip
   run:
     - python
-    - numpy >=1.12, <2
-    - scipy >=1.0.0, <2
-    - h5py >=2.6.0, <3
-    - pyqt >=5, <6
+    - numpy >=1.12,<2
+    - scipy >=1.0.0,<2
+    - h5py >=2.6.0,<3
+    - pyqt >=5,<6
     - qdarkstyle ==2.7
     - scikit-ued ==2.0.1
-    - pyqtgraph >=0.10, <1
+    - pyqtgraph >=0.10,<1
     - npstreams ==1.6.1
     - crystals ==0.6.6
 
@@ -43,7 +40,7 @@ about:
   home: http://iris-ued.readthedocs.io
   license: MIT
   license_family: MIT
-  license_file: 'LICENSE.txt'
+  license_file: LICENSE.txt
   summary: Ultrafast electron scattering data exploration
   description: |
     Iris is both a library for interacting with ultrafast electron scattering data, 

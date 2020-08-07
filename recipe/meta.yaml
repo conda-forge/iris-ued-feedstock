@@ -14,7 +14,6 @@ build:
   entry_points:
     - iris = iris.gui:run
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  noarch: python
 
 requirements:
   build:

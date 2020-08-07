@@ -1,4 +1,4 @@
-{% set version = "5.2.1" %}
+{% set version = "5.2.2" %}
 
 package:
   name: iris-ued
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/iris-ued/iris-ued-{{ version }}.tar.gz
-  sha256: ee10a8841449fa6a805493287fb6d366ce254637b7ceb0771902892d57b7e2c2
+  sha256: 2980bf192f4f716da42f6a208569cc0c09aa3babe2b3c146d0728a1b60078261
 
 build:
-  number: 3
-  skip: True  # [py<36 or linux]
+  number: 0
+  skip: True  # [py<36]
   entry_points:
     - iris = iris.gui:run
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -25,11 +25,11 @@ requirements:
     - scipy >=1.0.0,<2
     - h5py >=2.10.0,<3
     - pyqt >=5,<6
-    - qdarkstyle ==2.7
-    - scikit-ued >=2.0.2, <2.1.0
+    - qdarkstyle >=2.8, <3
+    - scikit-ued >=2.0.3, <3
     - pyqtgraph >=0.11,<1
-    - npstreams ==1.6.2
-    - crystals >=1, <2
+    - npstreams >=1.6.2,<2
+    - crystals >=1.1.2, <2
 
 test:
   imports:

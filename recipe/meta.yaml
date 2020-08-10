@@ -9,7 +9,7 @@ source:
   sha256: 2980bf192f4f716da42f6a208569cc0c09aa3babe2b3c146d0728a1b60078261
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<36]
   entry_points:
     - iris = iris.gui:run
@@ -30,6 +30,9 @@ requirements:
     - pyqtgraph >=0.11,<1
     - npstreams >=1.6.2,<2
     - crystals >=1.1.2, <2
+      # missing requirement in qdarkstyle: 
+      #    github.com/conda-forge/qdarkstyle-feedstock/issues/12
+    - qtpy >=1.9, <2
 
 test:
   imports:

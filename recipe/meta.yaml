@@ -9,7 +9,7 @@ source:
   sha256: 2980bf192f4f716da42f6a208569cc0c09aa3babe2b3c146d0728a1b60078261
 
 build:
-  number: 1
+  number: 2
   skip: True  # [py<36]
   entry_points:
     - iris = iris.gui:run

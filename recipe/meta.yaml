@@ -38,8 +38,8 @@ test:
 
 about:
   home: http://iris-ued.readthedocs.io
-  license: GPLv3
-  license_family: GPLv3
+  license: GPL3
+  license_family: GPL3
   license_file: LICENSE.txt
   summary: Ultrafast electron scattering data exploration
   description: |

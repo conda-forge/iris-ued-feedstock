@@ -3,11 +3,15 @@ About iris-ued
 
 Home: http://iris-ued.readthedocs.io
 
-Package license: MIT
+Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/iris-ued-feedstock/blob/master/LICENSE.txt)
 
 Summary: Ultrafast electron scattering data exploration
+
+Development: https://github.com/LaurentRDC/iris-ued
+
+Documentation: https://iris-ued.readthedocs.io/
 
 Iris is both a library for interacting with ultrafast electron scattering data,
 as well as a GUI frontend for interactively exploring this data.

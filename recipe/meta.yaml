@@ -9,7 +9,7 @@ source:
   sha256: 2980bf192f4f716da42f6a208569cc0c09aa3babe2b3c146d0728a1b60078261
 
 build:
-  number: 2
+  number: 3
   skip: True  # [py<36]
   entry_points:
     - iris = iris.gui:main
@@ -24,7 +24,7 @@ requirements:
     - numpy >=1.12,<2  # [py<38]
     - numpy >=1.17,<2  # [py>=38]
     - scipy >=1.0.0,<2
-    - h5py >=2.10.0,<3
+    - h5py >=2.10.0,<4
     - pyqt >=5,<6
     - qdarkstyle >=2.8.1, <3
     - scikit-ued >=2.0.3, <3

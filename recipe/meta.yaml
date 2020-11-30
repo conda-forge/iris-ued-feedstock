@@ -1,4 +1,4 @@
-{% set version = "5.2.3" %}
+{% set version = "5.2.4" %}
 
 package:
   name: iris-ued
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/iris-ued/iris-ued-{{ version }}.tar.gz
-  sha256: c81bda069c3ed708807b90dd84e0d753e696534d00637ef97d942ce145b1951d
+  sha256: aee05cdd9174e2dd777508411c60d5115cf3174f3cb17a511272e67a31f4026f
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - numpy >=1.12,<2  # [py<38]
     - numpy >=1.17,<2  # [py>=38]
     - scipy >=1.0.0,<2
-    - h5py >=2.10.0,<3
+    - h5py >=2.10.0,<4
     - pyqt >=5,<6
     - qdarkstyle >=2.8.1, <3
     - scikit-ued >=2.0.3, <3

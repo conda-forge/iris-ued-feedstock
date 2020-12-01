@@ -9,7 +9,7 @@ source:
   sha256: aee05cdd9174e2dd777508411c60d5115cf3174f3cb17a511272e67a31f4026f
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<36]
   entry_points:
     - iris = iris.gui:main
@@ -36,6 +36,8 @@ test:
   imports:
     - iris
     - iris.gui
+  commands:
+    - python -m unittest discover --buffer
 
 about:
   home: http://iris-ued.readthedocs.io

@@ -21,8 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - numpy >=1.12,<2  # [py<38]
-    - numpy >=1.17,<2  # [py>=38]
+    - numpy >=1.17,<2
     - scipy >=1.0.0,<2
     - h5py >=2.10.0,<4
     - pyqt >=5,<6

@@ -9,10 +9,10 @@ source:
   sha256: aee05cdd9174e2dd777508411c60d5115cf3174f3cb17a511272e67a31f4026f
 
 build:
-  number: 1
+  number: 2
   skip: True  # [py<36]
   entry_points:
-    - iris = iris.gui:main
+    - iris = iris.gui:run
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:

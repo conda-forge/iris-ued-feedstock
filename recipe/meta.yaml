@@ -9,18 +9,18 @@ source:
   sha256: aee05cdd9174e2dd777508411c60d5115cf3174f3cb17a511272e67a31f4026f
 
 build:
+  noarch: python
   number: 3
-  skip: True  # [py<36]
   entry_points:
     - iris = iris.gui:run
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
-    - python
     - pip
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - numpy >=1.17,<2
     - scipy >=1.0.0,<2
     - h5py >=2.10.0,<4

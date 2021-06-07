@@ -1,4 +1,4 @@
-{% set version = "5.3.0" %}
+{% set version = "5.3.1" %}
 
 package:
   name: iris-ued
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/iris-ued/iris-ued-{{ version }}.tar.gz
-  sha256: 5af46d4df732812ea11ad7fee2363d903adc19ced35a17a5dbae9f362da517a8
+  sha256: 053e4847a8651dd5cc04872329acb22b21eae319c02cc824d975179957c2f493
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
     - python >=3.7
   run:
@@ -49,9 +49,9 @@ about:
   description: |
     Iris is both a library for interacting with ultrafast electron scattering data, 
     as well as a GUI frontend for interactively exploring this data.
-  doc_url: 'https://iris-ued.readthedocs.io/'
-  dev_url: 'https://github.com/LaurentRDC/iris-ued'
+  doc_url: https://iris-ued.readthedocs.io/
+  dev_url: https://github.com/LaurentRDC/iris-ued
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - LaurentRDC

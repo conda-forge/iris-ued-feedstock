@@ -1,4 +1,4 @@
-{% set version = "5.3.3" %}
+{% set version = "5.3.4" %}
 
 package:
   name: iris-ued
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/iris-ued/iris-ued-{{ version }}.tar.gz
-  sha256: 2b5d7f8cefefb4cdd1934b2e5238548381af7ddd8ff989a3814c2f1446e44802
+  sha256: fe46edbc05072b2edb06da3d877c32c8fa43692791e3d24e94f9b13f1e098c3d
 
 build:
   noarch: python

@@ -1,11 +1,11 @@
-About iris-ued
-==============
+About iris-ued-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/iris-ued-feedstock/blob/main/LICENSE.txt)
 
 Home: http://iris-ued.readthedocs.io
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/iris-ued-feedstock/blob/main/LICENSE.txt)
 
 Summary: Ultrafast electron scattering data exploration
 

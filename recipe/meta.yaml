@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/i/iris-ued/iris-ued-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/i/iris-ued/iris-ued-{{ version }}.tar.gz
   sha256: bbded7659456c0e9c651192efc420109407363489740d9fced5e163cf3ba6956
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - iris = iris.gui:run
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -19,9 +19,9 @@ requirements:
   host:
     - setuptools
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy >=1.22,<3
     - scipy >=1.0.0,<2
     - h5py >=2.10.0,<4
@@ -37,6 +37,7 @@ test:
   requires:
     - pytest >= 6,<8
     - flaky >= 3,<4
+    - python {{ python_min }}
   imports:
     - iris
     - iris.gui
